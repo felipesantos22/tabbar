@@ -11,9 +11,6 @@ class ViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.title = "iOS"
-        
         // Configura o TabBar
         TabBar()
     }
@@ -29,30 +26,30 @@ class ViewController: UITabBarController {
         let secondNavController = UINavigationController(rootViewController: secondViewController)
         let thirdNavController = UINavigationController(rootViewController: thirdViewController)
 
-        // Adicionando os ViewControllers ao TabBar
-        self.viewControllers = [firstNavController, secondNavController, thirdNavController]
-        
         // Definindo os itens de TabBar
         firstViewController.tabBarItem = UITabBarItem(
-            title: "Primeira",
+            title: "Swift",
             image: UIImage(systemName: "star"), // Ícone do TabBar
             tag: 0
         )
 
         secondViewController.tabBarItem = UITabBarItem(
-            title: "Segunda",
+            title: "IOS",
             image: UIImage(systemName: "heart"), // Ícone do TabBar
             tag: 1
         )
         
         thirdViewController.tabBarItem = UITabBarItem(
-            title: "Terceira",
+            title: "View Code",
             image: UIImage(systemName: "star"), // Ícone do TabBar
             tag: 2
         )
         
+        // Adicionando os ViewControllers ao TabBar
+        self.viewControllers = [firstNavController, secondNavController, thirdNavController]
+        
         // Customizando a aparência do TabBar
-        tabBar.tintColor = .systemRed // Cor do ícone ativo
+        tabBar.tintColor = .black // Cor do ícone ativo
         tabBar.isTranslucent = false  // Torna o TabBar opaco (não translúcido)
     }
 }

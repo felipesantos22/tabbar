@@ -8,18 +8,14 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    
     override func viewDidLoad() {
-           super.viewDidLoad()
-        view.backgroundColor = .brown
-           self.title = "iOS"
-           setupNavigationBar()
+        super.viewDidLoad()
+        view.backgroundColor = .orange
+        setupNavigationBar()
     }
     
     func setupNavigationBar() {
-        // Título da navbar
-       
-        
         // Customizando a barra de navegação
         if let navigationController = self.navigationController {
             // Alterando cor de fundo da navbar
@@ -48,5 +44,5 @@ class SecondViewController: UIViewController {
     @objc func didTapLeftButton() {
         print("Botão da esquerda pressionado")
     }
-   
+    
 }

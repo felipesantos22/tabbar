@@ -11,16 +11,12 @@ class ThirdViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = .gray
-        
-      
-        // Setup da barra de navegação
+        // Define a cor de fundo da tela
+        view.backgroundColor = .magenta
         setupNavigationBar()
     }
 
     func setupNavigationBar() {
-        self.title = "Swift"
         // Customizando a barra de navegação
         if let navigationController = self.navigationController {
             // Alterando cor de fundo da navbar

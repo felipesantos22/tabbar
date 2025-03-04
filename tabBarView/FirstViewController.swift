@@ -8,18 +8,14 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-
+    
     override func viewDidLoad() {
-           super.viewDidLoad()
-        view.backgroundColor = .blue
-           self.title = "View Code"
-           setupNavigationBar()
+        super.viewDidLoad()
+        view.backgroundColor = .darkGray
+        setupNavigationBar()
     }
     
     func setupNavigationBar() {
-        // Título da navbar
-       
-        
         // Customizando a barra de navegação
         if let navigationController = self.navigationController {
             navigationController.navigationBar.tintColor = .black
@@ -47,5 +43,5 @@ class FirstViewController: UIViewController {
     @objc func didTapLeftButton() {
         print("Botão da esquerda pressionado")
     }
-   
+    
 }
