@@ -25,6 +25,14 @@ class FirstViewController: UIViewController {
             navigationController.navigationBar.isTranslucent = false
         }
         
+        // Criando um UILabel personalizado para o título
+        let titleLabel = UILabel()
+        titleLabel.text = "Inicio"
+        titleLabel.textColor = .black
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 18)
+        self.navigationItem.titleView = titleLabel
+        
+        
         // Adicionando um botão de ação à direita da navbar
         let rightButton = UIBarButtonItem(title: "Ação", style: .plain, target: self, action: #selector(didTapRightButton))
         self.navigationItem.rightBarButtonItem = rightButton

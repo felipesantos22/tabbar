@@ -49,7 +49,7 @@ class ViewController: UITabBarController {
         self.viewControllers = [firstNavController, secondNavController, thirdNavController]
         
         // Customizando a aparência do TabBar
-        tabBar.tintColor = .black // Cor do ícone ativo
+        tabBar.tintColor = .blue // Cor do ícone ativo
         tabBar.isTranslucent = false  // Torna o TabBar opaco (não translúcido)
     }
 }

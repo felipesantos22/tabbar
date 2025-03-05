@@ -20,12 +20,19 @@ class ThirdViewController: UIViewController {
         // Customizando a barra de navegação
         if let navigationController = self.navigationController {
             // Alterando cor de fundo da navbar
-            navigationController.navigationBar.tintColor = .black
+            navigationController.navigationBar.tintColor = .systemYellow
             // Tornando a navbar transparente
             navigationController.navigationBar.isTranslucent = false
             // Alterando cor de fundo da navbar
             navigationController.navigationBar.backgroundColor = .white
         }
+        
+        // Criando um UILabel personalizado para o título
+        let titleLabel = UILabel()
+        titleLabel.text = "Contato"
+        titleLabel.textColor = .black
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 18)
+        self.navigationItem.titleView = titleLabel
         
         // Adicionando um botão de ação à direita da navbar
         let rightButton = UIBarButtonItem(title: "Ação", style: .plain, target: self, action: #selector(didTapRightButton))

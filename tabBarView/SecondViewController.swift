@@ -22,9 +22,16 @@ class SecondViewController: UIViewController {
             navigationController.navigationBar.tintColor = .black
             // Tornando a navbar transparente
             navigationController.navigationBar.isTranslucent = false
-            // Alterando cor de fundo da navbar
+            // Alterando cor de fundo da navba
             navigationController.navigationBar.backgroundColor = .white
         }
+        
+        // Criando um UILabel personalizado para o título
+        let titleLabel = UILabel()
+        titleLabel.text = "About"
+        titleLabel.textColor = .black
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 18)
+        self.navigationItem.titleView = titleLabel
         
         // Adicionando um botão de ação à direita da navbar
         let rightButton = UIBarButtonItem(title: "Ação", style: .plain, target: self, action: #selector(didTapRightButton))
